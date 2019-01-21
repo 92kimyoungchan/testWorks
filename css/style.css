@@ -470,7 +470,8 @@ h2.pageTitle {
 .navigationTapWrapper {
 
 position: absolute;
-bottom:0;
+
+bottom: 0;
 }
 
 
@@ -479,6 +480,7 @@ bottom:0;
 }
 .aboutUs {
 
+position: relative;
 }
 .aboutUs .tab-content {
 
