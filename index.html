@@ -4,47 +4,96 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" />
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>테스트웍스</title>
-</head>   
-<body>
-	<!--헤더부분 --><header>
-	<div class="navigationWrapper">
-		<div class="logoBox">
-			<img src="images/main_logo.png" />
-		</div>
-		<div class="navigation">
+</head>
 
-			<ul>
-				<li>
-					<a href="">회사소개</a>
-				</li>
-				<li>
-					<a href="">사업분야</a>
-				</li>
-				<li>
-					<a href="">사업실적</a>
-				</li>
-				<li>
-					<a href="">채용</a>
-				</li>
-				<li>
-				<a href="">플랫폼</a>
-				</li>
-			</ul>
-		</div>
-		<div class="county">
-			<p>EN</p>
-			<p class="active">KR</p>
-			<div class="inputWrap">
-				<input type="text" /> <label><i class="fas fa-search"></i></label>
+<body>
+	<!--헤더부분 -->
+	<header>
+		<div class="navigationWrapper">
+			<div class="logoBox">
+				<img src="images/main_logo.png" />
 			</div>
+			<div class="navigation">
+
+				<ul>
+					<li>
+						<a href="">회사소개</a>
+					</li>
+					<li>
+						<a href="">사업분야</a>
+					</li>
+					<li>
+						<a href="">사업실적</a>
+					</li>
+					<li>
+						<a href="">채용</a>
+					</li>
+					<li>
+						<a href="">플랫폼</a>
+					</li>
+				</ul>
+			</div>
+			<div class="county">
+				<p>EN</p>
+				<p class="active">KR</p>
+				<div class="inputWrap">
+					<input type="text" /> <label><i class="fas fa-search"></i></label>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="container">
+
+		<div class="aboutUs">
+
+
+
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+					<div class="tabBoxTitle">
+					<h6>HOME</h3>
+					<h2>Some content.</p>
+				</div>
+				<div class="tabBoxContent">
+					<div class="imgWrap">
+							<img src="images/phone.jpg" />
+					</div>
+					<div class="textWrap">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</div>
+
+				</div>
+				</div>
+				<div id="menu1" class="tab-pane fade">
+					<h3>Menu 1</h3>
+					<p>Some content in menu 1.</p>
+				</div>
+				<div id="menu2" class="tab-pane fade">
+					<h3>Menu 2</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+			</div>
+			<div class="navigationTapWrapper">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+				<li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+			</ul>
+				</div>
+
+
 		</div>
 
 	</div>
-</header>
 
 
 	<!--푸터부분 -->
@@ -57,7 +106,7 @@
 			<div class="navigation">
 				<div class="footerInfo">
 					<p>
-						 개인정보 처리방침<span class="separate">│</span>이메일 무단 수집거부<span class="separate">│</span>관리자
+						개인정보 처리방침<span class="separate">│</span>이메일 무단 수집거부<span class="separate">│</span>관리자
 					</p>
 
 					<p>
@@ -65,7 +114,7 @@
 					</p>
 
 					<p>
-            대표자<span class="separate">_</span>윤석원
+						대표자<span class="separate">_</span>윤석원
 					</p>
 					<p class="last">
 						Copyright 테스트웍스 col.ltd,All Rights Reserved
@@ -79,6 +128,7 @@
 
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script>

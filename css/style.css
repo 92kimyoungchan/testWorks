@@ -466,3 +466,69 @@ h2.pageTitle {
   border-radius:50%;
   background: #1ce989;
 }
+
+.navigationTapWrapper {
+
+position: absolute;
+bottom:0;
+}
+
+
+.navigationTapWrapper ul.nav-tabs {
+
+}
+.aboutUs {
+
+}
+.aboutUs .tab-content {
+
+}
+
+.aboutUs .tab-content:after {
+  clear:both;
+  display:block;
+  content:"";
+}
+
+.aboutUs .tab-content .tab-pane {
+
+}
+
+.aboutUs .tab-content .tab-pane .tabBoxTitle {
+
+float: left;
+
+width: 260px;
+
+margin-right: 105px;
+}
+
+.aboutUs .tab-content .tab-pane .tabBoxTitle h6 {
+
+}
+.aboutUs .tab-content .tab-pane .tabBoxTitle h2 {
+
+}
+
+
+.aboutUs .tab-content .tab-pane .tabBoxContent {
+
+float: right;
+
+width: calc(100% - 365px);
+}
+
+.aboutUs .tab-content .tab-pane .tabBoxContent .imgWrap{
+
+}
+.aboutUs .tab-content .tab-pane .tabBoxContent .imgWrap img{
+
+max-width: 100%;
+}
+
+.aboutUs .tab-content .tab-pane .tabBoxContent .textWrap {
+
+}
+.aboutUs .tab-content .tab-pane .tabBoxContent .textWrap p {
+
+}
