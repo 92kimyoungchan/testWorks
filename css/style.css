@@ -534,3 +534,149 @@ max-width: 100%;
 .aboutUs .tab-content .tab-pane .tabBoxContent .textWrap p {
 
 }
+
+.carouselWrap {
+
+}
+
+.carouselWrap .owl-carousel {
+
+}
+
+
+.carouselWrap .owl-carousel .item {
+
+}
+
+.carouselWrap .owl-carousel .item img {
+
+}
+
+.carouselWrap .owl-carousel .item .owl-overlayWrap {
+
+position: absolute;
+
+width:100%;
+
+height:100%;
+background:rgba(0,0,0,0.43);
+
+}
+
+.carouselWrap .owl-carousel .item .overlayWrapAnother {
+  position: absolute;
+  width:100%;
+  height: 50px;
+  bottom: 0;
+  background: #c8edff47;
+}
+
+
+.carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay {
+
+position: relative;
+
+top: calc(50% - 76px);
+
+text-align: left;
+
+max-width: 1440px;
+
+margin: auto;
+}
+
+
+.carouselWrap .owl-carousel .item .overlayWrapAnother .carousel-overlay-bottom {
+  top: calc(100% - 50px);
+  position:relative;
+  max-width:1440px;
+  margin:0 auto;
+}
+
+.carouselWrap .owl-carousel .item .overlayWrapAnother .carousel-overlay-bottom p {
+
+color: white;
+
+margin-bottom: 0;
+
+font-size: 17px;
+
+padding: 12.5px 0;
+}
+
+
+.carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay h6 {
+
+color: white;
+
+font-size: 15.5px;
+
+font-weight: 600;
+
+letter-spacing: 1px;
+}
+
+.carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay h2 {
+
+margin-top:25px;
+
+letter-spacing: 1px;
+
+color: white;
+
+line-height: 50px;
+}
+.owl-carousel .owl-nav {
+
+display: block !important;
+
+position: absolute;
+
+top: calc(50% - 31px);
+
+width: 100%;
+}
+.owl-carousel .owl-nav .owl-prev {
+	float: left;
+	/* padding-left: 30px; */
+}
+
+.owl-carousel .owl-nav .owl-next {
+	float: right;
+	/* padding-right: 30px; */
+}
+
+
+.owl-carousel.owl-theme .owl-dots {
+	display: flex;
+	position: absolute;
+	bottom: 12.5%;
+	left: calc(50% - 42px);
+	z-index:100;
+}
+
+.owl-nav i {
+	font-size: 62px;
+	color: #f3f3f3;
+	padding: 0 52.5px;
+}
+
+
+.owl-carousel .owl-dot {
+	width:auto;
+	margin:0;
+}
+.owl-dot span {
+	background: none repeat scroll 0 0 transparent ;
+	border-radius: 20px;
+	display: block;
+	height: 10px;
+	margin: 5px 7px;
+	opacity: 0.8;
+	width: 10px;
+	border: 1px solid white;
+}
+
+.owl-dot.active span {
+	background: none repeat scroll 0 0 #f3f3f3 !important;
+}

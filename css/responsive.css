@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+@media screen and (min-width:1200px) {
+  .container {
+  max-width:1440px;
+  width:auto;
+  margin:0 auto;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
