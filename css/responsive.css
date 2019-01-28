@@ -428,7 +428,11 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
   }
 
   .owl-carousel .owl-nav .owl-prev {
-    top:calc(50% - 23px);
+    left: 0 !important;
+  }
+
+  .owl-carousel .owl-nav .owl-next {
+    right: 0 !important;
   }
   .carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay h2 {
     margin-top:20px;
@@ -746,12 +750,10 @@ header .navigationWrapper {
     }
 
     .owl-carousel .owl-nav .owl-next {
-    padding-right:15px;
-    top:calc(50% - 17px);
+    right: 0;
     }
     .owl-carousel .owl-nav .owl-prev {
-      padding-left:15px;
-        top:calc(50% - 17px);
+      left: 0 !important;
     }
     .owl-carousel.owl-theme .owl-dots {
       bottom:18.5%;
@@ -764,7 +766,7 @@ header .navigationWrapper {
       }
       .carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay {
         top:calc(50% - 59px);
-        padding:0 59px;
+        padding: 0px 85px;
       }
       .carouselWrap .owl-carousel .item .overlayWrapAnother .carousel-overlay-bottom p {
         font-size:16px;
@@ -1319,12 +1321,8 @@ section.member .cardBox {
   }
 
   .owl-carousel .owl-nav .owl-next {
-  padding-right:15px;
-  top:calc(50% - 22.5px);
   }
   .owl-carousel .owl-nav .owl-prev {
-    padding-left:15px;
-      top:calc(50% - 22.5px);
   }
   .owl-carousel.owl-theme .owl-dots {
     bottom:21%;
@@ -1333,7 +1331,7 @@ section.member .cardBox {
 
     .carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay {
       top:calc(50% - 57px);
-      padding:0 56px;
+      padding: 0 85px;
     }
     .carouselWrap .owl-carousel .item .overlayWrapAnother .carousel-overlay-bottom p {
       font-size:16px;
@@ -1447,7 +1445,8 @@ section.member .cardBox {
     height:35px;
   }
   .carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay {
-    top:calc(50% - 46px);
+    top: calc(50% - 48px);
+    padding: 0 45px !important;
   }
   .owl-carousel.owl-theme .owl-dots {
     bottom:23.5%;
@@ -1489,6 +1488,18 @@ section.member .cardBox {
   }
 }
 @media screen and (max-width:424px)  {
+
+  .owl-carousel.owl .owl-nav .owl-prev {
+    left:-20px !important;
+    padding-left: 35px;
+    top: calc(50% - 14px);
+  }
+
+  .owl-carousel.owl .owl-nav .owl-next {
+    right:-20px !important;
+    top: calc(50% - 14px);
+    padding-right: 35px;
+  }
   section.member .cardBox .cardWrap {
 
 width: 100%;

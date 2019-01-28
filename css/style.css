@@ -93,9 +93,10 @@ header {
 }
 
 footer {
-  background: url(../images/bgFooter.png)  no-repeat center !important;
+  background: url(../images/bgRecruit.png) no-repeat center center;
   padding: 85px 0;
   min-height: 260px;
+  background-size: cover;
 }
 
 .navigationWrapper {
@@ -555,7 +556,9 @@ opacity: 1.0;
 
 section.aboutUs {
 
-background: url(../images/bgBusiness.png);
+background: url(../images/bgBusiness.png) no-repeat center center;
+
+background-size: cover;
 }
 section.aboutUs .container {
   background:transparent;
@@ -656,7 +659,9 @@ line-height: 33px;
 
 section.businessArea {
 
-background: url(../images/bgBusiness.png);
+background: url(../images/bgBusiness.png) no-repeat center center;
+
+background-size: cover;
 }
 section.businessArea .container {
   background:transparent;
@@ -952,7 +957,7 @@ font-weight: bold;
 
 section.recruit {
 
-background: url(../images/bgRecruit.png);
+background: url(../images/bgRecruit.png) no-repeat center center;
 
 background-size: cover;
 }
@@ -1285,7 +1290,8 @@ max-width: 100%;
 
 section.vision {
 
-background: url(../images/bgVision.png);
+background: url(../images/bgVision.png) no-repeat center center;
+background-size:cover;
 }
 section.vision .container {
   background:transparent;
@@ -2537,16 +2543,30 @@ section.step {
 
 .stepWordHolder {
 
+position: relative;
+
+height: 70px;
+
+background: black;
+
+margin-bottom: 15px;
 }
 
 
 .stepWordHolder .abWrap1 {
 
+position: absolute;
+
+top: 0;
+
+width: 100%;
+
+height: 100%;
+
+background-image: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
 }
 
-.stepWordHolder .abWrap1 .container{
-
-}
+.stepWordHolder .abWrap1 .container{background: transparent;}
 
 .stepWordWrap {
 
@@ -2554,22 +2574,56 @@ section.step {
 
 .stepWordWrap .stepWord {
 
+float: left;
+
+width: 25%;
 }
 
 .stepWordWrap .stepWord h2 {
 
+margin: 0;
+
+padding: 0;
+
+line-height: 70px;
+
+color: white;
+
+font-size: 22.5px;
 }
 
+.stepWordWrap .stepWord h2:after {
+  content:"＞";
+  float: right;
+  padding-right: calc(50% - 54px);
+}
+
+.stepWordWrap .stepWord:last-of-type h2:after {
+  display:none;
+}
 .descriptionHolder {
 
+position: relative;
+
+height: 35px;
+
+background: #dedede;
 }
 
 .descriptionHolder .abWrap2 {
 
+position: absolute;
+
+width: 100%;
+
+top: 0;
+
+height: 100%;
 }
 
 .descriptionHolder .abWrap2 .container {
 
+background: transparent;
 }
 
 .descriptionWrap {
@@ -2578,8 +2632,55 @@ section.step {
 
 .descriptionWrap .description  {
 
+width: 25%;
+
+float: left;
 }
 
 .descriptionWrap .description h2  {
 
+line-height: 35px;
+
+margin: 0;
+
+font-size: 15px;
+
+padding: 0;
+
+font-weight: bold;
+}
+
+.contextWrap {
+
+box-shadow: 0px 1px 1px 1px #dedfe0;
+
+margin-bottom: 25px;
+}
+
+.contextWrap .container {
+
+min-height: auto;
+
+padding: 20px 0;
+}
+
+.contextWrap .container .context {
+
+width: 25%;
+
+float: left;
+}
+
+.contextWrap .container .context p {
+
+margin: 6.5px 0;
+}
+
+
+.contextWrap .container .context p:first-of-type {
+  margin:0 0 6.5px 0;
+}
+
+.contextWrap .container .context p:last-of-type {
+  margin:6.5px 0 0 0;
 }
