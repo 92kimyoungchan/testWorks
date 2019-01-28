@@ -6,7 +6,7 @@ $(document).ready(function() {
      navigation : true, // Show next and prev buttons
      slideSpeed : 300,
      paginationSpeed : 400,
-     margin:20,
+     margin:0,
      loop:true,
      dots:true,
      dotsEach:true,
