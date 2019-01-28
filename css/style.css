@@ -2094,3 +2094,77 @@ font-size: 25px;
 
 color: gainsboro;
 }
+
+/* 모달 */
+
+.modal-open {
+	padding-right: 0 !important;
+}
+
+.modal-dialog {
+	max-width: 800px;
+}
+
+.modal-body {
+	overflow-y: scroll;
+    max-height: 700px;
+}
+
+.modal-title {
+	font-weight: bold;
+    padding: 0;
+}
+
+.modal-body p {
+	font-weight: bold;
+}
+
+.modal-body span, .modal-body ul li {
+	display: block;
+	font-weight: 400;
+}
+
+.termsTextTitle {
+	margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.termsTextBox {
+	margin-bottom: 16px;
+}
+
+.termsTextBox.box {
+    border: 1px solid #d2e8f3;
+    padding: 15px;
+}
+
+.modal-body p, .modal-body span, .modal-body ul li {
+	font-size: 15px;
+	line-height: 27px;
+}
+
+.close:not(:disabled):not(.disabled) {
+	/* border-radius: 13px; */
+}
+
+.close:not(:disabled):not(.disabled):hover {
+	background: #ddd;
+}
+
+.modal-header .close {
+	padding: 10px;
+    margin: 0 -1rem -1rem auto;
+}
+
+.privacyTable {
+	margin-bottom: 20px;
+}
+
+.privacyTable thead tr th, .privacyTable tbody tr td {
+	border: 1px solid #d2e8f3;
+    padding: 10px;
+    min-width: 140px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 27px;
+}
