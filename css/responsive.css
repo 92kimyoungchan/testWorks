@@ -1,6 +1,15 @@
 @CHARSET "UTF-8";
 
 
+
+@media screen and (min-width:1400px) {
+
+      .companyMember {
+        width:1290px;
+        right:calc(50% - 645px);
+      }
+}
+
 @media screen and (min-width:1200px) and (max-width:1399px) {
 
 
@@ -53,6 +62,7 @@
 
   #memberView, .companyMember {
     top:calc(50% - 25px);
+    right:calc(50% - 580px);
   }
 
   .modalContent .cardWrap {
@@ -61,6 +71,7 @@
 
   .modalContent .personWrap {
     padding: 35px 15px 0 15px;
+    width:calc(100% - 175px);
   }
   .personHistory .imgWrap {
     max-width:200px;
@@ -372,6 +383,7 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
 @media screen and (min-width:768px) and (max-width:1199px) {
   #memberView, .companyMember {
     top:calc(33% - 0px);
+    right:calc(50% - 310px);
   }
 }
 
@@ -889,6 +901,7 @@ header .navigationWrapper {
   }
   #memberView, .companyMember {
     top:calc(25% - 0px);
+    right:calc(50% - 310px);
   }
 
 
@@ -898,8 +911,7 @@ header .navigationWrapper {
 
 @media screen and (min-width:646px)  {
   #memberView, .companyMember {
-  width:calc(50% - 312px);
-  width:auto;
+
   }
 }
 

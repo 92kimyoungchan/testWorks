@@ -14,10 +14,10 @@ $(document).ready(function() {
      singleItem : true,
       items : 1,
          nav : true, // Show next and prev buttons
-         navText: [
-          "<i class='fa fa-angle-left license_chevron'></i>",
-          "<i class='fa fa-angle-right license_chevron'></i>"
-           ]
+				 navText: [
+ 				 "<img src='images/arrow_wR@2x.png'>",
+ 				 "<img src='images/arrow_wL@2x.png'>"
+ 					]
 	  });
 
 });

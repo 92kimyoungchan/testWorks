@@ -428,10 +428,13 @@
 				/* 버튼 클릭 */
 			$("section.member .cardBox .cardWrap").on("click", function(e) {
 				memberId = $(this).attr("id");
+				$('section.member .cardBox').css('opacity','0');
 				memberModalOn();
 			});
 			$(".modalContent .function button").on("click", function(e) {
+				$('section.member .cardBox').css('opacity','1');
 				memberModalOff();
+
 			});
 
 

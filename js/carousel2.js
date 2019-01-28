@@ -15,8 +15,8 @@ $(document).ready(function() {
       items : 5,
 			nav : true, // Show next and prev buttons
 			navText: [
-			 "<i class='fa fa-angle-left license_chevron'></i>",
-			 "<i class='fa fa-angle-right license_chevron'></i>"
+			 "<img src='images/arrow_gR@2x.png'>",
+			 "<img src='images/arrow_gL@2x.png'>"
 				]
 	  });
 
