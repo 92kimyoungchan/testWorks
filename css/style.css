@@ -1630,6 +1630,10 @@ text-align: center;
 padding: 30px 0;
 }
 
+.explainSet span.little {
+
+}
+
 .explainSet .imgWrapper {
   width: 30px;
   margin: 0px auto;
@@ -1647,9 +1651,14 @@ margin: 12.5px 0;
 
 padding-bottom: 0;
 
-font-size: 24px;
+font-size: 22.5px;
 
 font-weight: bold;
+}
+
+.explainSet h2.before {
+
+margin: 20px 0 12.5px 0;
 }
 
 .explainSet p {
@@ -2206,4 +2215,371 @@ color: gainsboro;
     text-align: center;
     font-size: 15px;
     line-height: 27px;
+}
+
+
+
+.solution {
+  margin-bottom:10px;
+}
+
+.solution .circleWrap {
+
+padding: 15PX 40PX;
+
+width: 490px;
+
+margin: 0 auto;
+}
+
+.solution .circleWrap:after {
+  clear:both;
+  display:block;
+  content:"";
+}
+
+.solution .circleWrap .circle {
+
+FLOAT: LEFT;
+
+background: black;
+
+border-radius: 50%;
+
+width: 130px;
+
+height: 130px;
+
+cursor: pointer;
+}
+.solution .circleWrap .circle:hover {
+
+background: #4981bc;
+}
+
+.solution .circleWrap .circle.active {
+
+background: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
+
+box-shadow: 0px 0px 20px 3px #7b9eee;
+}
+
+.solution .circleWrap .circle:hover h2 {
+
+}
+
+.solution .circleWrap .circle:last-of-type {
+  float:right;
+}
+
+.circleWrap .circle h2 {
+
+color: white;
+
+font-size: 18.5px;
+
+line-height: 130px;
+
+margin: 0;
+
+padding: 0;
+
+text-align: center;
+
+font-weight: bold;
+}
+
+.thingWrap {
+
+padding: 35px 0;
+
+max-width: 620px;
+
+margin: 0 auto;
+display:none;
+}
+
+.thingWrap p.subtitle br {
+  display:none;
+}
+
+.thingWrap p.subtitle {
+
+text-align: center;
+
+color: blue;
+
+font-weight: bold;
+
+margin-bottom: 35px;
+}
+
+
+.thingWrap .thing {
+
+margin: 15px 0;
+
+border: 1px solid #5e6674;
+
+border-radius: 50px;
+
+display: flex;
+
+padding: 35px 40px;
+
+align-items: center;
+}
+
+.thingWrap .thing:first-of-type {
+
+margin: 0px 0 15px 0;
+}
+
+.thingWrap .thing:last-of-type {
+  margin:0;
+}
+
+.thingWrap .thing label {
+
+margin-bottom: 0;
+
+font-size: 20px;
+
+color: blue;
+
+min-width: 55px;
+
+text-align: left;
+
+min-width: 115px;
+}
+
+.thingWrap .thing .articleWrap {
+
+width: calc(100% - 115px);
+
+padding-left: 40px;
+
+border-left: 1px solid #5e6674;
+}
+.thingWrap .thing .thingArticle:after{
+  clear:both;
+  content:"";
+  display:block;
+}
+.thingWrap .thing .thingArticle {
+
+display: block;
+
+margin: 1.5px 0;
+}
+
+.thingWrap .thing .thingArticle:first-of-type {
+
+margin: 0 0 1.5px 0;
+}
+
+.thingWrap .thing .thingArticle:last-of-type {
+
+margin: 1.5px 0 0 0;
+}
+
+.thingWrap .thing .thingArticle span {
+
+float: left;
+
+line-height: 25px;
+
+margin-right: 6.5px;
+}
+.thingWrap .thing .thingArticle p {
+
+margin-bottom: 0;
+
+float: left;
+}
+
+.serviceWrap {
+
+}
+
+.serviceWrap p.subTitle {
+
+text-align: center;
+
+font-weight: bold;
+
+color: blue;
+
+font-size: 19px;
+
+margin: 15px 0;
+}
+.service {
+
+margin: 15px auto;
+
+width: 870px;
+}
+
+.service .thing  {
+
+display: flex;
+
+margin: 25px 0;
+
+box-shadow: 0px 2.5px 2px 2px #dedfe0;
+
+border-radius: 115px;
+}
+
+.service .thing:first-of-type {
+
+}
+
+.service .thing:last-of-type {
+
+}
+
+.service .thing .point  {
+
+min-width: 195px;
+
+background-image: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
+
+padding: 25px 5px;
+}
+
+.service .thing .point.right {
+  border-top-right-radius: 115px;
+  border-bottom-right-radius: 115px;
+}
+
+
+
+
+.service .thing .point.left {
+  border-top-left-radius: 115px;
+  border-bottom-left-radius: 115px;
+  align-items: center;
+}
+
+.service .thing .point h2  {
+
+color: white;
+
+margin: 0;
+
+padding: 0;
+
+line-height: 7.5;
+
+text-align: center;
+
+font-weight: bold;
+
+font-size: 20.5px;
+}
+
+.service .thing .articleWrap {
+
+width: calc(100% - 195px);
+
+padding: 37.5px 50px;
+
+background: #fafafa;
+}
+
+.service .thing .articleWrap.left {
+  border-top-left-radius: 115px;
+  border-bottom-left-radius: 115px;
+  text-align: right;
+}
+
+.service .thing .articleWrap.right {
+  border-top-right-radius: 115px;
+  text-align: left;
+  border-bottom-right-radius: 115px;
+}
+
+
+.service .thing .articleWrap .thingArticle {
+
+}
+
+.service .thing .articleWrap .thingArticle h2 {
+
+margin: 0;
+
+padding: 0;
+
+font-size: 16px;
+
+font-weight: bold;
+
+color: blue;
+
+margin-bottom: 27.5px;
+}
+
+.service .thing .articleWrap .thingArticle p {
+
+margin-bottom: 0;
+
+font-size: 14.5px;
+
+margin: 4px 0;
+}
+
+section.step {
+
+}
+
+.stepWordHolder {
+
+}
+
+
+.stepWordHolder .abWrap1 {
+
+}
+
+.stepWordHolder .abWrap1 .container{
+
+}
+
+.stepWordWrap {
+
+}
+
+.stepWordWrap .stepWord {
+
+}
+
+.stepWordWrap .stepWord h2 {
+
+}
+
+.descriptionHolder {
+
+}
+
+.descriptionHolder .abWrap2 {
+
+}
+
+.descriptionHolder .abWrap2 .container {
+
+}
+
+.descriptionWrap {
+
+}
+
+.descriptionWrap .description  {
+
+}
+
+.descriptionWrap .description h2  {
+
 }

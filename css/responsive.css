@@ -915,7 +915,7 @@ header .navigationWrapper {
   }
 }
 
-@media screen and (max-width:645px)  {
+@media screen and (max-width: 645px)  {
   ul.nav-tabs li p {
     margin-top:2.5px;
     font-size:16px;
@@ -1178,6 +1178,77 @@ div.contact .textWrap h2 {
   #memberView, .companyMember {
     width:100%;
   }
+
+  .solution .circleWrap {
+
+width: 100%;
+
+}
+  .thingWrap {
+
+width: 80%;
+
+}
+
+  .thingWrap .thing {
+
+padding: 20px 30px;
+
+margin: 10px 0;
+
+display: block;
+
+border-radius: 6.5px;
+
+}
+
+  .thingWrap .thing:first-of-type  {
+
+margin: 0px 0 20px 0;
+
+}
+
+  .thingWrap .thing:last-of-type  {
+
+  }
+
+  .thingWrap .thing label {
+
+margin-bottom: 15px;
+
+}
+
+  .thingWrap .thing .articleWrap {
+
+padding-left: 0;
+
+width: 100%;
+
+border-left: 0;
+
+clear: both;
+
+}
+  .thingWrap .thing .thingArticle:first-of-type {
+
+  }
+  .thingWrap .thing .thingArticle {
+
+  }
+
+  .thingWrap .thing .thingArticle:last-of-type {
+
+  }
+
+  .thingWrap .thing .thingArticle span {
+
+  }
+
+  .thingWrap .thing .thingArticle p {
+
+clear: both;
+
+}
 
 
 
@@ -1444,6 +1515,26 @@ margin: 30px auto 20px;
 .modalContent .personWrap {
   padding:35px 15px 0 15px;
 }
+
+.solution .circleWrap .circle {
+  width:115px;
+  height:115px;
+}
+
+.circleWrap .circle h2 {
+  line-height:115px;
+}
+
+.thingWrap p.subtitle br {
+  display:block;
+}
+.solution .circleWrap {
+  padding:15PX 30PX;
+}
+.thingWrap .thing {
+  padding:15px 20px;
+}
+
 }
 
   @media screen and (max-width:374px)  {
