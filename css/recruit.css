@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*.circleImg3Set {
+  margin: 20px 0;
+  width: 100%;
+  display: inline-block;
+  float: left;
+
+}
+
+.circleImgBox {
+  display: inline-block;
+  float: left;
+  width: 33.3%;
+}
+
+.circleImgBox .imgWrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.circleImgBox p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+*/
+
+.explainSet h4 {
+  font-weight: bold;
+  color: #355b96;
+}
+
+.explainSet.black h4 {
+  color: #333;
+}
+
+.circleImg3Set {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  border-bottom: 3px solid #eae9e9;
+  margin: 20px 0;
+}
+
+.circleImgBox {
+  display: inline-block;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 50px;
+}
+
+.circleImgBox .imgWrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.circleImgBox p {
+  text-align: center;
+}
+
+.circleImgBox .titleText {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.bodyText p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.bodyText.left p {
+  text-align: left;
+}
+
+.explainSet .imgWrapper.full {
+  width: 670px;
+}
+
+.radiusTextBox {
+  border: 1px solid #355b96;
+  border-radius: 10px;
+  padding: 30px;
+  width: 60%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.hideMenu .inputTextBox {
+  width: 50%;
+  margin: 0 auto 50px;
+}
+
+.hideMenu .inputText {
+  margin-bottom: 15px;
+}
+
+.hideMenu .inputText label {
+  width: 10%;
+  margin-right: 15px;
+  font-size: 17px;
+  text-align: left;
+  color: #355b96;
+}
+
+.hideMenu .inputText input {
+  width: 80%;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #355b96;
+}
+
+.inputText.big label {
+  vertical-align: top;
+  margin-top: 7px;
+}
+
+.inputText.big input {
+  height: 170px;
+}
+
+.hideMenu .buttonSet {
+  text-align: center;
+}
+
+.hideMenu .buttonSet button {
+  background-color: #355b96;
+  border: none;
+  padding: 5px 30px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;}
