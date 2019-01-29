@@ -40,7 +40,7 @@
   display: inline-block;
   float: left;
   width: 100%;
-  border-bottom: 3px solid #eae9e9;
+  border-bottom: 2px solid #eae9e9;
   margin: 20px 0;
 }
 
@@ -56,6 +56,10 @@
   margin-bottom: 15px;
 }
 
+.circleImgBox .imgWrapper img {
+  max-height: 167px;
+}
+
 .circleImgBox p {
   text-align: center;
 }
@@ -63,6 +67,14 @@
 .circleImgBox .titleText {
   font-size: 17px;
   font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #355b96;
+  margin: 0;
+
+}
+
+.bodyText {
+  padding: 10px;
 }
 
 .bodyText p {
@@ -109,11 +121,13 @@
   height: 35px;
   border-radius: 20px;
   border: 1px solid #355b96;
+  padding: 0 12px;
+  font-size: 16px;
 }
 
 .inputText.big label {
   vertical-align: top;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .inputText.big input {
@@ -134,4 +148,50 @@
   font-size: 15px;
 }
 
-input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;}
+.explainSet.black {
+  width: 70%;
+  display: block;
+}
+
+.labelCheck {
+  float: initial;
+  font-size: 16px;
+}
+
+.labelCheck input:checked ~ .checkmark {
+  right: -20%;
+  left: auto;
+}
+
+.labelCheck .checkmark {
+  left: auto;
+  right: -20%;
+  top: 2px;
+  border-radius: 50%;
+}
+
+.labelCheck .checkmark:after {
+  top: 2px;
+  border: 1px solid #355b96;
+  border-width: 0 3px 3px 0;
+  height: 13px;
+  left: 6px;
+  width: 8px;
+}
+
+.inputText.big textarea {
+      width: 80%;
+      height: 185px;
+      border-radius: 20px;
+      border: 1px solid rgb(53, 91, 150);
+      padding: 7px 12px;
+      font-size: 16px;
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+.addBorder {
+  box-shadow: 0 0 3px #29559a, 0 1px 0 rgba(0,0,0,0.07) inset;
+}
