@@ -88,6 +88,10 @@ div.container:after {
   content: "";
 }
 
+header .navigationWrapper.active .container {
+
+}
+
 header {
   background:white;
 }
@@ -225,8 +229,8 @@ margin: 0;
 .navigation ul li {
   display: inline-block;
   margin: 0 8px;
-  text-align: center;
   min-width: 105px;
+  text-align: left;
 }
 
 .navigation ul li:first-of-type {
@@ -526,6 +530,7 @@ min-height: 40px;
 ul.nav-tabs li .symbol img {
   max-width: 24px;
   padding: 8px 0;
+  cursor:pointer;
 }
 
 ul.nav-tabs li p {
@@ -1088,7 +1093,7 @@ background: #d9dde4;
 
 #mini-owl .owl-stage-outer {
 
-  padding: 25PX 0;
+  padding: 12.5PX 0;
 
 }
 
@@ -1638,6 +1643,11 @@ padding: 30px 0;
 
 .explainSet span.little {
 
+font-size: 16px;
+
+font-weight: bold;
+
+color: #355188;
 }
 
 .explainSet .imgWrapper {
@@ -1672,6 +1682,10 @@ margin: 20px 0 12.5px 0;
 margin-bottom: 0;
 
 margin-top: 25px;
+}
+
+.explainSet p.after {
+
 }
 
 .introDuctionContext {text-align: center;}
@@ -2313,7 +2327,7 @@ display:none;
 
 text-align: center;
 
-color: blue;
+color: #355188;
 
 font-weight: bold;
 
@@ -2351,7 +2365,7 @@ margin-bottom: 0;
 
 font-size: 20px;
 
-color: blue;
+color: #355188;
 
 min-width: 55px;
 
@@ -2415,7 +2429,7 @@ text-align: center;
 
 font-weight: bold;
 
-color: blue;
+color: #355188;
 
 font-size: 19px;
 
@@ -2523,7 +2537,7 @@ font-size: 16px;
 
 font-weight: bold;
 
-color: blue;
+color: #355188;
 
 margin-bottom: 27.5px;
 }
@@ -2566,7 +2580,7 @@ height: 100%;
 background-image: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
 }
 
-.stepWordHolder .abWrap1 .container{background: transparent;}
+.stepWordHolder .abWrap1 .container{background: transparent; min-height:auto; padding-bottom:0;}
 
 .stepWordWrap {
 
@@ -2621,10 +2635,7 @@ top: 0;
 height: 100%;
 }
 
-.descriptionHolder .abWrap2 .container {
-
-background: transparent;
-}
+.descriptionHolder .abWrap2 .container {background: transparent;min-height: auto;padding-bottom: 0;}
 
 .descriptionWrap {
 
@@ -2683,4 +2694,337 @@ margin: 6.5px 0;
 
 .contextWrap .container .context p:last-of-type {
   margin:6.5px 0 0 0;
+}
+
+.technique {
+
+}
+
+.technique .container  {
+
+min-height: auto;
+
+padding-bottom: 0;
+}
+
+.technique .circleBox {
+
+display: flex;
+
+margin: 10px 0;
+}
+
+.technique .circleWrap {
+
+width: 20%;
+}
+
+.technique .circleWrap .circle {max-width: 130px;height: 130px;margin: 0 auto;border-radius: 50%;background: beige;}
+
+.technique .circleWrap .circle .hWrap {padding: 36PX 0;}
+
+.technique .circleWrap .circle h2 {
+
+color: #222;
+
+line-height: normal;
+}
+
+.technique .circleWrap .circle h2:last-of-type {
+
+margin-top: 4px;
+}
+
+.explainSet h2.point {
+
+color: #355188;
+}
+
+
+section.test {
+
+}
+
+
+
+section.test .container {
+
+min-height: auto;
+
+padding-bottom: 0;
+}
+
+.orderLogic {
+
+position: relative;
+
+margin: 55px 0;
+
+padding: 10px 0 30px 0;
+}
+.orderLogic .lineView {
+
+position: absolute;
+
+border-bottom: 2px solid #355188;
+
+width: 100%;
+
+top: 40px;
+}
+
+.orderLogic .logicWrap .logic h2 {
+
+margin: 15px 0;
+
+padding: 0;
+
+text-align: center;
+
+font-size: 18px;
+
+line-height: 27px;
+
+font-weight: bold;
+
+color: #355188;
+}
+
+
+.orderLogic .inlineView {
+
+}
+
+
+.orderLogic .logicWrap {
+
+display: flex;
+}
+
+.orderLogic .logicWrap .logic {
+
+width: calc(100% / 3);
+
+max-width: 280px;
+
+margin: 0 auto;
+
+z-index: 99;
+}
+
+.orderLogic .logicWrap .logic .circle{
+
+MAX-WIDTH: 60PX;
+
+height: 60PX;
+
+background: #355188;
+
+border-radius: 50%;
+
+margin: 0 auto;
+}
+
+
+
+.orderLogic .logicWrap .logic .circle h2{
+
+margin: 0;
+
+padding: 0;
+
+line-height: 60px;
+
+color: white;
+
+text-align: center;
+
+font-size: 18px;
+
+font-weight: bold;
+}
+
+.orderLogic .logicWrap .logic .textWrap {
+
+text-align: center;
+
+margin-top: 25px;
+}
+
+.orderLogic .logicWrap .logic .textWrap p {
+
+}
+
+section.AI {
+
+
+}
+
+section.AI .container {
+
+min-height: auto;
+
+padding-bottom: 0;
+}
+
+section.AI .Context {
+
+max-width: 790px;
+
+margin: 0 auto;
+}
+
+.Context h6 {
+
+font-size: 18px;
+
+color: #355188;
+
+text-align: center;
+
+font-weight: bold;
+}
+
+.Context .columnWrap {
+
+margin: 15px 0;
+}
+
+.Context .columnWrap .column {
+
+background: #f2f2f2;
+
+border-radius: 50px;
+
+padding: 24px 35px;
+margin:25px 0;
+
+DISPLAY: FLEX;
+}
+
+.Context .columnWrap .column .imgWrap {margin-right: 45px;}
+
+
+.Context .columnWrap .column .imgWrap img {
+
+float: left;
+
+margin: 0 20px 0 0px;
+}
+.Context .columnWrap .column .imgWrap p {float: left;margin-bottom: 0;line-height: 33px;font-weight: bold;color: #355188;font-size: 18px;}
+
+.Context .columnWrap .column .text {
+
+width: calc(100% - 143px);
+}
+
+.Context .columnWrap .column .text p {
+
+margin-bottom: 0;
+
+line-height: 33px;
+
+font-size: 16px;
+}
+
+.manufacture {
+
+max-width: 790px;
+
+margin: 25px  auto 0;
+
+min-height: 380px;
+}
+
+.manufacture:after {
+  clear:both;
+  display:block;
+  content:"";
+  }
+.manufacture .process  {
+
+width: 30.666%;
+
+float: left;
+
+margin-right: 4%;
+
+border-radius: 25px;
+
+overflow: hidden;
+
+box-shadow: inset 0px 0.5px 6px 1px #dedfe0;
+}
+
+.manufacture .process:last-of-type  {
+  margin-right:0;
+}
+
+.manufacture .process .header  {background: #98cbbf;}
+
+.manufacture .process .header h2  {
+
+margin: 0;
+
+padding: 0;
+
+line-height: 45px;
+
+text-align: center;
+
+font-size: 18px;
+
+color: white;
+}
+
+.manufacture .process .content {
+
+padding: 20px;
+
+min-height: 150px;
+}
+
+.manufacture .process .content p {margin: 6.5px 0;}
+
+
+.manufacture .process .content.center1 p {
+    align-items: center;
+    text-align:center;
+    line-height: 2;
+    margin: 0;
+}
+
+.manufacture .process .content.center2 p {
+    align-items: center;
+    text-align:center;
+    line-height: 6;
+    margin: 0;
+}
+
+.navigationWrapper .navigation span {
+  display:none;
+  float:right;
+}
+
+.navigationWrapper .navigation.active span i {
+
+font-size: 16px;
+
+padding: 2px 0;
+}
+.navigationWrapper .navigation ul.alpha {
+  display:none;
+}
+
+.navigationWrapper .navigation.active ul.alpha li {
+
+}
+
+
+.navigationWrapper .navigation.active ul.alpha li p {
+  margin-bottom:0;
+}
+
+.navigationWrapper .navigation.active ul.alpha li p a {
+
 }

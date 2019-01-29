@@ -37,17 +37,80 @@
 			</div>
 			<div class="navigation">
 				<ul>
-					<li class="active">
-						<a href="about.html">회사소개</a>
+					<li class="">
+						<a href="about.html">회사소개</a><span><i class="fas fa-plus"></i></span>
+						<ul class="alpha">
+							<li>
+								<p>
+									<a>- Introduction</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- History</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- 조직도</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- 키멤버</a>
+								</p>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="sample2.html">사업분야</a>
+						<a href="sample2.html">사업분야</a><span><i class="fas fa-plus"></i></span>
+						<ul class="alpha">
+							<li>
+								<p>
+									<a>- SW 테스트</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- 테스트 프로세스</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- 테스트 자동화</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- AI 데이터</a>
+								</p>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="sample.html">사업실적</a>
 					</li>
 					<li>
-						<a href="recruit.html">채용</a>
+						<a href="recruit.html">채용</a><span><i class="fas fa-plus"></i></span>
+						<ul class="alpha">
+							<li>
+								<p>
+									<a>- 채용안내</a>
+								</p>
+							</li>
+
+							<li>
+								<p>
+									<a>- 채용관련</a>
+								</p>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="">플랫폼</a>
@@ -142,28 +205,28 @@
 
 	<div id="mini-owl" class="owl-carousel own owl-theme">
 		<div class="item">
-			<img src="images/busan@2x.png" />
+			<img src="images/busan.png" />
 		</div>
 		<div class="item">
-			<img src="images/honeywell@2x.png" />
+			<img src="images/honeywell.png" />
 		</div>
 		<div class="item">
-			<img src="images/nia@2x.png" />
+			<img src="images/nia.png" />
 		</div>
 		<div class="item">
-			<img src="images/nipa@2x.png" />
+			<img src="images/nipa.png" />
 		</div>
 		<div class="item">
-			<img src="images/Samsung@2x.png" />
+			<img src="images/Samsung.png" />
 		</div>
 		<div class="item">
-			<img src="images/sap@2x.png" />
+			<img src="images/sap.png" />
 		</div>
 		<div class="item">
-			<img src="images/StradVision@2x.png" />
+			<img src="images/StradVision.png" />
 		</div>
 		<div class="item">
-			<img src="images/tta@2x.png" />
+			<img src="images/tta.png" />
 		</div>
 
 	</div>
@@ -222,15 +285,15 @@
 								<p><a data-toggle="tab" href="#first">잠재력</a></p>
 							</li>
 							<li>
-								<div class="symbol"><img src="images/symbol.png" /></div>
+								<div class="symbol"><img src="images/symbolLess.png" /></div>
 								<p><a data-toggle="tab" href="#second">성장</a></p>
 							</li>
 							<li>
-								<div class="symbol"><img src="images/symbol.png" /></div>
+								<div class="symbol"><img src="images/symbolLess.png" /></div>
 								<p><a data-toggle="tab" href="#third">전문성</a></p>
 							</li>
 							<li>
-								<div class="symbol"><img src="images/symbol.png" /></div>
+								<div class="symbol"><img src="images/symbolLess.png" /></div>
 								<p><a data-toggle="tab" href="#fourth">테스트</a></p>
 							</li>
 
@@ -552,8 +615,50 @@
 
 		$(function() {
 
+				var flag=true;
+
+
+			$('.navigationWrapper .navigation span').click(function(){
+
+				if($(this).find('i').hasClass('fa-plus')) {
+					$(this).find('i').removeClass('fa-plus');
+				 $(this).find('i').addClass('fa-minus');
+				 $('.navigation ul li').removeClass('plus');
+					$(this).next().slideToggle();
+			 }else {
+				 $(this).find('i').removeClass('fa-minus');
+				$(this).find('i').addClass('fa-plus');
+
+						$(this).next().slideToggle();
+			 }
+
+
+
+
+			});
+
+			$('.navigationTapWrapper ul.nav-tabs li').click(function(){
+					$('.symbol img').attr("src","images/symbolLess.png");
+					$(this).find('.symbol img').attr("src","images/symbol.png");
+					$('.navigationTapWrapper ul.nav-tabs li').removeClass('active');
+					$(this).addClass('active');
+
+			});
+
 			$("#mobilemenu").click(function(){
-  			$(".navigationWrapper .navigation").slideToggle();
+				$('.navigationWrapper .navigation.active span i').removeClass('fa-minus');
+				$('.navigationWrapper .navigation.active span i').addClass('fa-plus');
+				$('.navigationWrapper .navigation ul.alpha').css('display','none');
+				if(flag){
+  			$(".navigationWrapper .navigation").addClass('active');
+				$('.navigationWrapper .navigation').slideToggle();
+				flag = false;
+
+			}else {
+				$(".navigationWrapper .navigation").removeClass('active')
+					$('.navigationWrapper .navigation').slideToggle();
+					flag = true;
+			}
 			});
 			var windowWidth = $(window).outerWidth();
 			console.log(windowWidth);

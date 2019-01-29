@@ -605,7 +605,6 @@ footer .navigationWrapper .navigation {
   display:block;
   min-width:auto;
   width:100%;
-  text-align:center;
   margin:0;
   padding:7px 15px 10px;
 }
@@ -635,10 +634,31 @@ header .navigationWrapper {
   min-height:85px;
 }
 
+.navigation.active ul li {
+  text-align:left;
+}
+
+.navigationWrapper .navigation.active ul.alpha li {
+  margin:6.5px 0;
+  padding:0;
+}
+
 
 .navigationWrapper .navigation {
   display:none;
   padding:10px 0;
+}
+
+.navigationWrapper .navigation.active {
+
+}
+
+.navigationWrapper .navigation span {
+  display:block;
+}
+
+.navigationWrapper .navigation ul li.plus ul.alpha {
+  display:block;
 }
 
   .navigationWrapper .county {
