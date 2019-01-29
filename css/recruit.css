@@ -40,7 +40,7 @@
   display: inline-block;
   float: left;
   width: 100%;
-  border-bottom: 3px solid #eae9e9;
+  border-bottom: 2px solid #eae9e9;
   margin: 20px 0;
 }
 
@@ -56,6 +56,10 @@
   margin-bottom: 15px;
 }
 
+.circleImgBox .imgWrapper img {
+  max-height: 167px;
+}
+
 .circleImgBox p {
   text-align: center;
 }
@@ -63,6 +67,14 @@
 .circleImgBox .titleText {
   font-size: 17px;
   font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #355b96;
+  margin: 0;
+
+}
+
+.bodyText {
+  padding: 10px;
 }
 
 .bodyText p {
@@ -132,6 +144,37 @@
   font-weight: bold;
   border-radius: 20px;
   font-size: 15px;
+}
+
+.explainSet.black {
+  width: 70%;
+  display: block;
+}
+
+.labelCheck {
+  float: initial;
+  font-size: 16px;
+}
+
+.labelCheck input:checked ~ .checkmark {
+  right: -20%;
+  left: auto;
+}
+
+.labelCheck .checkmark {
+  left: auto;
+  right: -20%;
+  top: 2px;
+  border-radius: 50%;
+}
+
+.labelCheck .checkmark:after {
+  top: 2px;
+  border: 1px solid #355b96;
+  border-width: 0 3px 3px 0;
+  height: 13px;
+  left: 6px;
+  width: 8px;
 }
 
 input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;}
