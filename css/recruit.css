@@ -121,11 +121,13 @@
   height: 35px;
   border-radius: 20px;
   border: 1px solid #355b96;
+  padding: 0 12px;
+  font-size: 16px;
 }
 
 .inputText.big label {
   vertical-align: top;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .inputText.big input {
@@ -177,4 +179,19 @@
   width: 8px;
 }
 
-input {-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;}
+.inputText.big textarea {
+      width: 80%;
+      height: 185px;
+      border-radius: 20px;
+      border: 1px solid rgb(53, 91, 150);
+      padding: 7px 12px;
+      font-size: 16px;
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+.addBorder {
+  box-shadow: 0 0 3px #29559a, 0 1px 0 rgba(0,0,0,0.07) inset;
+}

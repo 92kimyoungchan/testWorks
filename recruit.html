@@ -299,7 +299,8 @@
 
       <div class="explainSet black">
         <label class="labelCheck" for="checked">
-          <input type="checkbox" id="checked" name="agree" value="success"> <span class="checkmark"></span>
+          <input type="checkbox" id="checked" name="agree" value="" class="agree">
+          <span class="checkmark"></span>
           <span>개인정보 취급방침에 동의합니다.</span>
         </label>
       </div>
@@ -312,7 +313,7 @@
         <div class="inputTextBox">
           <div class="inputText">
             <label>작성자</label>
-            <input type="text" name="" id="" class="" />
+            <input type="text" name="" id="writer" class="" />
           </div>
 
           <div class="inputText">
@@ -332,17 +333,41 @@
 
           <div class="inputText big">
             <label>내용</label>
-            <input type="text" name="" id="" class="" />
+            <textarea name="" id="message" class=""></textarea>
+
           </div>
 
 
         </div>
 
         <div class="buttonSet">
-          <button type="button" name="button">Submit</button>
+          <button type="button" name="button" data-toggle="modal" data-target="#submitModal">Submit</button>
         </div>
 
       </div>
+
+
+
+      <!-- Modal -->
+  <div class="modal fade" id="submitModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
 
@@ -425,21 +450,36 @@
       },100);  */
     });
 
+    /*문의하기 숨김 메뉴 */
+
     $(".hideMenu").hide();
 
+    $(".agree").on("click", function() {
 
-
-
-    $(".explainSet.black").on("click", function() {
-
-      var check = $("#checked").prop(":checked");
-
-      if ($(check)) {
+      if($(this).is(":checked")) {
         $(".hideMenu").fadeIn();
-      } else{
-        $(".hideMenu").fadeOut();
+        $("#writer").focus();
+      } else {
+        if($(".hideMenu").fadeIn()) {
+          $(".hideMenu").fadeOut();
+          $("input[type=text]").val("");
+          $("#message").val("");
+        }
       }
+
     });
+
+    /* 글상자 클릭했을 때 포커스 */
+
+    $(".inputText input, .inputText textarea").focus(function() {
+      $(this).addClass("addBorder");
+    });
+
+    $('.inputText input, .inputText textarea').blur(function(){
+      			$('.inputText input, .inputText textarea').removeClass("addBorder");
+    });
+
+
 
     $(window).resize(function() {
 
