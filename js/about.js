@@ -7,7 +7,7 @@ $(function() {
 
   var $cardArray = [$("#card6"), $("#card5"), $("#card4"), $("#card3"), $("#card2"), $("#card1")];
 
-
+  setEvent();
   $("section.member .cardBox .cardWrap").on("click", function(e) {
 
     //  $('section.member .cardBox').css('opacity', '0');
@@ -19,8 +19,7 @@ $(function() {
     //   onComplete: completeHandler,
     //   onCompleteParams: ["{self}"]
     // }, 0.2);
-
-    TweenMax.staggerFromTo($cardArray, 0.5, {
+    var tween = TweenMax.staggerFromTo($cardArray, 0.5, {
         ease: Back.easeOut,
         opacity: 1,
         x: 0,
@@ -30,10 +29,9 @@ $(function() {
         x: "+=300",
         display: "none",
         onComplete: memberModalOn,
-        onCompleteParams: ["{self}",$(this)]
+        onCompleteParams: ["{self}", $(this)]
       },
       0.1);
-
 
 
     // $cardBox.find(".cardWrap").each(function(index){
@@ -63,7 +61,7 @@ $(function() {
         y: 0,
         delay: 0.1,
         onReversComplete: memberModalOff,
-        onReverseCompleteParams: ["{self}",$(this)]
+        onReverseCompleteParams: ["{self}", $(this)]
       },
       0.1);
 
@@ -74,35 +72,48 @@ $(function() {
 
 });
 
-var $console = $('#console')
+function setEvent() {
+  // box 클래스에 마우스가 들어왔을 때
+  $('#cardBox .cardWrap').mouseenter(function(e) {
+    e.preventDefault();
+    TweenMax.to($(this), 1, {
+      y: -25,
+      ease: Back.easeOut
+    });
 
-function completeHandler(tween) {
-  $console.append("<p> tween complete / target text = " + tween.target.innerHTML + "</p>")
+  })
+
+  // box 클래스에 마우스 커서가 떠나갔을 떄
+  $('#cardBox .cardWrap').mouseleave(function(e) {
+    e.preventDefault();
+    TweenMax.to($(this), 1, {
+      y: 0,
+      ease: Back.easeOut
+    });
+  })
 }
-
-
 // Circ.easeOut,
 
 
-function memberModalOn(tween,target) {
+function memberModalOn(tween, target) {
 
   if (tween.target.attr("id") == "card1") {
 
-      TweenMax.fromTo($("."+target.attr("id")), 0.45, {
-        display: "none",
-        opacity: 0,
-        x: -200,
-      }, {
-        display: "block",
-        opacity: 1,
-        x: 0,
-        force3D: true
-      });
+    TweenMax.fromTo($("." + target.attr("id")), 0.45, {
+      display: "none",
+      opacity: 0,
+      x: -200,
+    }, {
+      display: "block",
+      opacity: 1,
+      x: 0,
+      force3D: true
+    });
 
   };
 }
 
-function memberModalOff(tween,target) {
+function memberModalOff(tween, target) {
 
   $(".companyMember").css("display", "none");
 
