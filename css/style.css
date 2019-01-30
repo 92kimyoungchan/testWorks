@@ -65,7 +65,7 @@ ul {
 }
 
 section {
-  background:#fefefe;
+  background:#fbfbfb;
 }
 
 section:After {
@@ -75,9 +75,10 @@ section:After {
 }
 section .container {
   padding-bottom:85px;
-
-
+  position: relative;
+  margin-top: -60px;
 }
+
 div.container {
   background:#fff;
 }
@@ -1682,6 +1683,8 @@ margin: 20px 0 12.5px 0;
 margin-bottom: 0;
 
 margin-top: 25px;
+
+font-size: 16px;
 }
 
 .explainSet p.after {
@@ -2245,11 +2248,14 @@ color: gainsboro;
 
 .solution .circleWrap {
 
-padding: 15PX 40PX;
+padding: 15PX 22PX;
 
 width: 490px;
 
 margin: 0 auto;
+border: 1px solid #eaeaea;
+border-radius: 90px;
+
 }
 
 .solution .circleWrap:after {
@@ -2262,7 +2268,7 @@ margin: 0 auto;
 
 FLOAT: LEFT;
 
-background: black;
+background: #2a3673;
 
 border-radius: 50%;
 
