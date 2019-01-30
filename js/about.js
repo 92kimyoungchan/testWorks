@@ -63,7 +63,7 @@ $(function() {
         display: "none",
         opacity: 0,
         ease: Power3.easeOut,
-        y: -150,
+        y: -100,
         x: 0,
         delay: 0.15,
       }, {
@@ -75,7 +75,7 @@ $(function() {
         onStart: memberModalOff,
         onStartParams: ["{self}", $(this)]
       },
-      0.15);
+      0.12);
 
   });
 
