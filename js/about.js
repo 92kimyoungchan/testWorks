@@ -24,17 +24,17 @@ $(function() {
     //   onCompleteParams: ["{self}"]
     // }, 0.2);
 
-        $(this).addClass("active");
+    $(this).addClass("active");
 
-    for(var i = 0; i< $cardArray.length; i++){
+    for (var i = 0; i < $cardArray.length; i++) {
       var yv = -40;
-      if($cardArray[i].hasClass("active")){
+      if ($cardArray[i].hasClass("active")) {
         yv = -180;
       }
       TweenMax.to($cardArray[i], 0.5, {
         opacity: 0,
         display: "none",
-        y:yv,
+        y: yv,
         ease: Power3.easeOut,
         delayIncrement: 0.2,
         onComplete: memberModalOn,
@@ -58,19 +58,20 @@ $(function() {
 
   $(".modalContent .function button").on("click", function(e) {
     // $('section.member .cardBox').css('opacity', '1');
-    TweenMax.staggerFromTo($cardBox.find(".cardWrap"), 1.2, {
+
+    TweenMax.staggerFromTo($cardBox.find(".cardWrap"), 0.8, {
         display: "none",
         opacity: 0,
         ease: Power3.easeOut,
         y: -150,
         x: 0,
-        delay: 0.1,
+        delay: 0.15,
       }, {
         ease: Back.easeOut,
         opacity: 1,
         display: "block",
         y: 0,
-        delay: 0.2,
+        delay: 0.15,
         onStart: memberModalOff,
         onStartParams: ["{self}", $(this)]
       },
@@ -82,6 +83,14 @@ $(function() {
 
 
 // Circ.easeOut,
+function memberModalOff(tween, target) {
+
+console.log("memberModalOff 실행 ");
+
+  $(".companyMember").css("display", "none");
+  $(".companyMember").css("opacity", "0");
+
+}
 
 
 function memberModalOn(tween, target) {
@@ -93,13 +102,13 @@ function memberModalOn(tween, target) {
     TweenMax.fromTo($("." + target.attr("id")), 0.8, {
       display: "none",
       alpha: 0,
- ease: Expo.easeOut,
+      ease: Expo.easeOut,
       y: 100,
     }, {
       y: 0,
       display: "block",
       alpha: 1,
- ease: Expo.easeOut,
+      ease: Expo.easeOut,
       force3D: true
     });
 
@@ -107,12 +116,6 @@ function memberModalOn(tween, target) {
   };
 }
 
-function memberModalOff(tween, target) {
-
-  $(".companyMember").css("display", "none");
-  $(".companyMember").css("opacity", "0");
-
-}
 
 
 function setEvent() {
