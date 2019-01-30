@@ -63,7 +63,7 @@ $(function() {
         display: "none",
         opacity: 0,
         ease: Power3.easeOut,
-        y: -100,
+        y: 100,
         x: 0,
         delay: 0.15,
       }, {
