@@ -20,27 +20,6 @@
     padding: 180px 20px 0;
   }
 
-  .businessArea .tab-content .tab-pane .tabBoxContent .imgWrap {
-    float:right;
-    margin-right:0;
-    width:320px;
-  }
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap {
-    clear:both;
-    position:relative;
-    width:auto;
-    padding:0;
-  }
-
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h4 {
-    margin:0 0 30px 0;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h2 {
-    font-size:31px;
-    line-height: 46.5px;
-  }
 
   .owl-nav i {
       font-size:54px;
@@ -89,7 +68,18 @@
 
 }
 
+@media screen and (max-width:1299px) {
+  .cardSet .card .innerContent p br {
+    display:none;
+  }
+}
+
 @media screen and (min-width:1200px) {
+
+  #all .cardWrapper .cardSet {
+    width:calc((100% - 140px) / 5);
+  }
+
   .container {
   max-width:1290px;
     width:auto;
@@ -183,15 +173,42 @@
 
   }
 
-
-
-
-
-
+.businessArea .tab-pane#second .contentWrap {
+  display:none;
+}
 
 }
 
+
+
+
+@media screen and (min-width:992px) and (max-width:1299px) {
+   #all .cardWrapper {
+
+   }
+  #all .cardWrapper .cardSet {
+
+  }
+
+
+  #all .cardWrapper .cardSet:nth-of-type(3) {
+
+  }
+}
+
 @media screen and (min-width:992px) and (max-width:1199px) {
+   #all .cardWrapper .cardSet:nth-of-type(4) ,  #all .cardWrapper .cardSet:nth-of-type(5) {
+      margin-top:35px;
+  }
+
+
+  .businessArea .tab-pane .contentWrap .tabBoxContent {
+    display:block;
+  }
+
+  .businessArea .tab-pane .contentWrap .tabBoxContent .textWrap {
+    width:auto;
+  }
 
   section.member .cardBox .cardWrap {
     width:calc((100% /3) - 25px);
@@ -267,47 +284,7 @@
     font-size:16px;
   }
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card {
-    padding:30px 20px 22.5px;
-    min-width:210px;
 
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card.active {
-    padding:40px 20px 32.5px;
-  }
-
-  .businessArea .tab-content .tab-pane .contentWrap {
-    width:calc(100% - 485px);
-
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap {
-    margin-right:45px;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .imgWrap {
-    float:right;
-    margin-right:0;
-    width:320px;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap {
-    width:auto;
-    position:relative;
-    padding:0;
-    clear:both;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h4 {
-      margin:0 0 20px 0;
-      font-size:18px;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h2 {
-    line-height:38px;
-    font-size:26px;;
-  }
 
 div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
   padding: 155px 25px 0;
@@ -333,7 +310,14 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
   width:140px;
 }
 
+
   .
+}
+
+@media screen and (min-width:992px) {
+  #third .cardWrapper {
+    margin-right:55px;
+  }
 }
 
 @media screen and (max-width:991px) {
@@ -356,9 +340,37 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
 
   }
 
+  .service .thing {
+    max-width:100%;
+  }
+
+  .service .thing .thingCircleWrap {
+    margin-right:35px;
+  }
+    section.step {
+      display:none;
+
+    }
+
+    section.step.md {
+      display:block;
+    }
+
+    .processSet {
+      padding:25px 0;
+    }
+
+.stepWordWrap .stepWord h2:after {
+  display:none;
+}
+
 
 }
 @media screen and (min-width:768px) {
+
+  #second .cardWrapper .cardSet:last-of-type {
+    margin-right:0;
+  }
   .navigation ul li.active {
 
   }
@@ -385,9 +397,60 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
     top:calc(33% - 0px);
     right:calc(50% - 310px);
   }
+
+  #all .cardWrapper {
+    margin-right:0;
+  }
+
+
+
+
+
+
+
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+
+  .cardWrapper .cardSet {
+    margin-right:25px;
+    width:220px;
+    padding:35px 25px;
+  }
+
+  .cardWrapper .cardSet.active {
+
+    padding:45px 25px;
+    min-height:360px;
+  }
+
+      #second .cardWrapper {
+        margin-right:0;
+      }
+
+      #second .cardWrapper .cardSet:last-of-type {
+        margin-right:0;
+      }
+    .cardWrapper {
+      margin-right:25px;
+    }
+
+    .businessArea .tab-pane .contentWrap {
+      width:calc(100% - 490px);
+    }
+
+    .businessArea .tab-pane .contentWrap .tabBoxContent {
+      padding:15px 0px;
+    }
+
+    .businessArea .tab-pane .contentWrap .tabBoxContent .imgWrap {
+      width:100%;
+    }
+
+    .businessArea .tab-pane .contentWrap .tabBoxContent .textWrap {
+    display:none;
+    }
+
   .navigationWrapper .logoBox {
     max-width:145px;
     margin-right:20px;
@@ -495,64 +558,8 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
   }
 
 
-  /* Business Area */
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card {
-    padding:25px 17.5px 12.5px;
-    margin:15px 0 0;
-    min-width:185px;
-  }
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card.active {
-    margin:0px 15px 0 0;
-    padding:30px 17.5px 25px;
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap {
-    width:390px;
-    margin-right:30px;
-
-  }
-
-  .businessArea .tab-content .tab-pane .contentWrap {
-    width:calc(100% - 420px);
-    position:relative;
-    right:0;
-  }
-
-  .businessArea .tab-content .tab-pane .contentWrap .navigationTapWrapper {
-    position:absolute;
-    top:0;
-  }
-
-  .contentWrap .navigationTapWrapper .nav-tabs li {
-    width:100px;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .imgWrap {
-    display:none;
-  }
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap {
-    width:100%;
-    position:relative;
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent {
-    position:absolute;
-    bottom:0;
-
-  }
-
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h4 {
-    margin:0 0 25px 0;
-  }
-
-  .businessArea .tab-content .tab-pane {
-  }
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h2 {
-    line-height:43.5px;
-    font-size:29px;
-  }
 
   div.recruit {
     display: block;
@@ -586,6 +593,14 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
   }
 
 
+#all .cardWrapper .cardSet:nth-of-type(3n) {
+  margin-right:0;
+}
+
+
+.stepWordHolder .abWrap1 .container , .descriptionHolder .abWrap2 .container ,.contextWrap .container {
+  width:100%;
+}
 
 
 
@@ -594,6 +609,10 @@ div.aboutUs ,div.businessArea ,div.recruit ,div.vision ,div.contact {
 
 @media screen and (max-width:767px)  {
 
+
+.aboutUs .tab-content .tab-pane .tabBoxContent {
+  float:none;
+}
 
 footer .navigationWrapper .navigation {
   display:block !important;
@@ -613,6 +632,9 @@ footer .navigationWrapper .navigation {
   font-weight:550;
 }
 
+.navigationWrapper .navigation span:not(.separate) {
+  display:block;
+}
 .navigation ul li:first-of-type ,.navigation ul li:last-of-type {
   margin:0;
 }
@@ -653,7 +675,7 @@ header .navigationWrapper {
 
 }
 
-.navigationWrapper .navigation span {
+.navigationWrapper .navigation span:not('separate') {
   display:block;
 }
 
@@ -742,13 +764,7 @@ header .navigationWrapper {
     div.infomation p {
       font-size:16px;
     }
-    .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h2 {
-      font-size:29px;
-      line-height:43.5px;
-    }
-    .businessArea .tab-content .tab-pane .tabBoxContent .textWrap h4 {
-      margin:0 0 35px 0;
-    }
+
 
     .vision .contentWrap h6 {
       font-size:30px;
@@ -802,10 +818,101 @@ header .navigationWrapper {
       }
 
 
+  .businessArea .tab-pane .contentWrap {
+    display:none;
+  }
+
+  .cardWrapper {
+    width:465px;
+    margin:0 auto;
+  }
+
+  .cardWrapper .cardSet {
+    width:48%;
+    margin-right:4%;
+
+  }
+  .cardWrapper .cardSet.active {
+    min-height:auto;
+    padding:35px;
+  }
+
+  .cardSet .card .innerContent p {
+    word-break:keep-all;
+  }
+
+  .thingCircleWrap .point h2 {
+    line-height:110px;
+    font-size:16px;
+  }
+
+  .thingCircleWrap .point {
+    width:110px;
+  }
+
+  .service .thing .thingCircleWrap {
+    margin-right:25px;
+  }
+
+  .service .thing .thingCircleWrap {
+    padding:35px 20px;
+  }
+
+  .service .thing .articleWrap .thingArticle h2 {
+    font-size:16px;
+  }
+  .articleWrap .thingArticle .pipeLine p {
+    font-size:13.5px;
+  }
 
 
+}
 
+@media screen and (min-width:646px) and (max-width:991px) {
+  .aboutUs .tab-content .tab-pane .tabBoxContent .abHolder {
+   height:160px;
+ }
 
+ .stepWordWrap .stepWord , .descriptionWrap .description , .contextWrap .container .context {
+   width:50%;
+ }
+ .stepWordHolder  .abWrap1 {
+
+background: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
+}
+ .stepWordHolder .abWrap1 .container {
+
+max-width: 530px;
+
+margin: 0 auto;
+
+background-image: transparent;
+}
+
+ .descriptionHolder   {
+
+background: #dedede;
+}
+ .descriptionHolder .abWrap2  {
+
+ }
+
+ .descriptionHolder .abWrap2 .container {
+
+background: transparent;
+
+max-width: 530px;
+
+margin: 0 auto;
+}
+
+ .contextWrap .container {
+
+max-width: 530px;
+
+margin: 0 auto;
+
+}
 }
 
 @media screen and (min-width:646px) and (max-width:767px) {
@@ -826,95 +933,8 @@ header .navigationWrapper {
     margin:30px 0 20px;
   }
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card.active {
-    margin:0;
-    padding:0px;
-      background-image:none;
-        background:none;
 
-  }
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card {
-    float:none;
-    min-width:auto;
-    width:265px;
-    padding:0px;
-    border-radius:0;
-    background-image:none;
-    margin:0;
-    background:none;
-    border-top:1.6px solid #355188;
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card .innerContent {
-    padding:25px 12.5px;
-  }
-
-  .cardWrapper .card .innerContent h2 {
-    float:left;
-    display:none;
-  }
-
-  .cardWrapper .card .innerContent .imgContent {
-    float:left;
-    padding:20px 0;
-    margin-right:25px;
-  }
-  .cardWrapper .card .innerContent .imgContent img {
-    margin:7.5px 0;
-  }
-
-  .cardWrapper .card .innerContent p {
-    float:left;
-    color:#355188;
-  }
-  .cardWrapper .card .innerContent p.lineTwo {
-    padding:10px 0;
-  }
-
-  .cardWrapper .card .innerContent .buttonWrapper {
-    float:left;
-    display:none;
-  }
-  .businessArea .tab-content .tab-pane .titleWrap {
-    margin-right:20px;
-  }
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card .innerContent:after{
-    clear:both;
-    display:block;
-    content:"";
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .mobileHeader {
-      display:block;
-      margin:10px 0;
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .mobileHeader h2 {
-      margin:0;
-      padding-bottom:0;
-      font-size:19px;
-      padding-bottom:2.5px;
-      font-weight:550;
-      color:#355188;
-  }
-
-  .businessArea .tab-content .tab-pane .contentWrap {
-    width:calc(100% - 285px);
-  }
-
-  .businessArea .tab-content .tab-pane .contentWrap .navigationTapWrapper {
-    position:relative;
-    float:right;
-  }
-  .businessArea .tab-content .tab-pane .tabBoxContent .textWrap {
-    width:100%;
-    top:0;
-    position:relative;
-  }
-  .businessArea .tab-content .tab-pane .tabBoxContent {
-    bottom:25px;
-  }
   .historyWrap {
     padding:0 15px;
   }
@@ -929,6 +949,10 @@ header .navigationWrapper {
 
 
 
+
+
+
+
 }
 
 @media screen and (min-width:646px)  {
@@ -938,6 +962,14 @@ header .navigationWrapper {
 }
 
 @media screen and (max-width: 645px)  {
+
+.aboutUs .tab-content .tab-pane .tabBoxContent .abHolder {
+  height:160px;
+}
+  div.vision {
+    display:block;
+  }
+
   ul.nav-tabs li p {
     margin-top:2.5px;
     font-size:16px;
@@ -984,8 +1016,9 @@ div.contact .textWrap h2 {
     min-width:auto;
     margin-right:0;
   }
-  .aboutUs .tab-content .tab-pane , div.vision ,.businessArea .tab-content .tab-pane {
+  .aboutUs .tab-content .tab-pane {
     display:block;
+    min-height:510px;
   }
   .aboutUs .tab-content .tab-pane .titleWrap {
     margin-right:0;
@@ -998,6 +1031,7 @@ div.contact .textWrap h2 {
   .aboutUs .navigationTapWrapper {
     top:0;
     right:0;
+    height:67px;
   }
   .aboutUs .tab-content .tab-pane .titleWrap .headerTitle {
     position:relative;
@@ -1042,108 +1076,6 @@ div.contact .textWrap h2 {
       text-align:left;
       padding:0 25px;
     }
-
-    .businessArea .tab-content .tab-pane .titleWrap {
-      width:100%;
-      margin-right:0;
-    }
-    .businessArea .tab-content .tab-pane .contentWrap {
-      width:100%;
-    }
-    .businessArea .tab-content .tab-pane .titleWrap .cardWrapper:after{
-      clear:both;
-      display:block;
-      content:"";
-    }
-    section.businessArea.transform645 {
-      display:block !important;
-    }
-      section.businessArea {
-      display:none;
-    }
-
-    section.businessArea.transform645 .businessArea .tab-content .tab-pane .titleWrap .headerTitle {
-      margin-bottom:25px;
-    }
-
-      section.businessArea.transform645 .businessArea .tab-content .tab-pane .titleWrap .navigationTapWrapper {
-        position:relative;
-        margin:30px 0 45px 0;
-      }
-
-
-      .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card.active {
-    margin:0;
-    padding:0px;
-      background-image:none;
-        background:none;
-
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card {
-    float:none;
-    min-width:auto;
-    width:280px;
-    padding:0px;
-    border-radius:0;
-    background-image:none;
-    margin:0;
-    background:none;
-    border:1.6px solid #355188;
-    border-radius:4px;
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card:after , .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card .innerContent:after{
-    clear:both;
-    display:block;
-    content:"";
-  }
-
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card .innerContent {
-    padding:25px 12.5px;
-  }
-
-  .cardWrapper .card .innerContent h2 {
-    float:left;
-    display:none;
-  }
-
-  .cardWrapper .card .innerContent .imgContent {
-    float:left;
-    padding:20px 0;
-    margin-right:25px;
-  }
-  .cardWrapper .card .innerContent .imgContent img {
-    margin:7.5px 0;
-  }
-
-  .cardWrapper .card .innerContent p {
-    float:left;
-    color:#355188;
-  }
-  .cardWrapper .card .innerContent p.lineTwo {
-    ;
-  }
-
-  .cardWrapper .card .innerContent .buttonWrapper {
-    float:left;
-    display:none;
-  }
-
-  section.businessArea.transform645 .businessArea .tab-content .tab-pane .titleWrap .headerTitle {
-    text-align:center;
-  }
-  .navigationTapWrapper ul.nav-tabs {
-    max-width:300px;
-    margin:0 auto;
-  }
-
-    .navigationTapWrapper .nav-tabs.normal li p {
-      font-size:16px;
-    }
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper {
-    padding:0 25px;
-  }
 
   .historyWrap .articleHistory {
     display:block;
@@ -1272,6 +1204,31 @@ clear: both;
 
 }
 
+div.businessArea .headerTitle .navigationTapWrapper {
+  display:block;
+  clear:both;
+  float:none;
+  width:360px;
+  margin:0 auto;
+  padding-top:25px;
+
+}
+
+
+
+div.businessArea .headerTitle h2 {
+  display:block;
+  text-align:center;
+  width:100%;
+}
+.cardWrapper .cardSet {
+  width:48%;
+  margin-right:4%;
+}
+
+
+
+
 
 
 }
@@ -1282,10 +1239,19 @@ section.member .cardBox {
   padding:0 20px;
   width:480px;
   }
+  .tab-pane:not(#third) .cardWrapper .cardSet:nth-of-type(2n) {
+    margin-right:0;
+  }
+
+  #third .cardWrapper .cardSet:last-of-type {
+    margin-top:0;
+  }
+
 }
 
 
 @media screen and (min-width:481px) and (max-width:645px) {
+
 
   .vision .imgWrap {
     width:calc(100% - 105px);
@@ -1293,25 +1259,13 @@ section.member .cardBox {
     float:none;
   }
 
+.cardWrapper .cardSet {
+  padding:35px 15px !important;
+}
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card {
-    float:left;
-    width:48%;
-  }
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card.active {
-    margin-right:4%;
-  }
-  .cardWrapper .card .innerContent p {
-    text-align:center;
-    width:100%;
-  }
-  .cardWrapper .card .innerContent .imgContent {
-    clear:both;
-    width:100%;
-    margin:0 auto;
-    text-align:center;
 
-  }
+
+
   .carouselWrap .owl-carousel .item .owl-overlayWrap .carousel-overlay h2 {
     font-size:16px;
     line-height:27px;
@@ -1358,6 +1312,65 @@ section.member .cardBox {
     }
 
 
+.articleWrap .thingArticle .pipeLine {
+  margin-bottom:10px;
+}
+
+
+.articleWrap .thingArticle .pipeLine:last-of-type  {
+  margin-bottom:0;
+}
+
+.service .thing {
+  margin-bottom:4.5px;
+  }
+
+  .service .thing .articleWrap .thingArticle h2 {
+    line-height:24px;;
+  }
+
+
+
+  .stepWordWrap .stepWord , .descriptionWrap .description , .contextWrap .container .context {
+     width:50%;
+   }
+   .stepWordHolder  .abWrap1 {
+
+  background: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
+  }
+   .stepWordHolder .abWrap1 .container {
+
+  max-width: 530px;
+
+  margin: 0 auto;
+
+  background-image: transparent;
+  }
+
+   .descriptionHolder   {
+
+  background: #dedede;
+  }
+   .descriptionHolder .abWrap2  {
+
+   }
+
+   .descriptionHolder .abWrap2 .container {
+
+  background: transparent;
+
+  max-width: 530px;
+
+  margin: 0 auto;
+  }
+
+   .contextWrap .container {
+
+  max-width: 530px;
+
+  margin: 0 auto;
+
+  }
 
 
 
@@ -1372,13 +1385,7 @@ section.member .cardBox {
   .aboutUs .tab-content .tab-pane .titleWrap {
     margin-top:35px;
   }
-  section.businessArea.transform645 .tab-content .tab-pane .titleWrap .cardWrapper .card {
-    margin:15px auto;
-    width:100%;
-  }
-  .cardWrapper .card .innerContent p.lineTwo {
-    padding:10px 0;
-  }
+
 
   div.recruit .megaButton {
     width:280px;
@@ -1405,20 +1412,8 @@ section.member .cardBox {
     display:none;
   }
 
-  .cardWrapper .card .innerContent .imgContent {
-    margin-right:25px;
-    margin-left:25px;
-    float:right;
-  }
 
-  .cardWrapper .card .innerContent p {
-    width:calc(100% - 110px);
-    padding-left:12.5px;
-      }
 
-      .businessArea .tab-content .tab-pane .titleWrap .cardWrapper .card .innerContent {
-        padding:20px 12.5px;
-      }
 
       section.member .container {
         padding:55px 0 35px;
@@ -1428,6 +1423,99 @@ section.member .cardBox {
         padding:15px 0 22.5px 0;
       }
 
+      .cardWrapper {
+        max-width:240px;
+
+      }
+
+      .cardWrapper .cardSet  {
+        margin-right:0;
+        width:100%;
+      }
+
+    .service .thing {
+      display:block;
+      margin-bottom:20px;
+    }
+    .service .thing:last-of-type {
+      margin-bottom:0;
+    }
+    .service .thing .thingCircleWrap {
+      margin:0 auto;
+      float:none;
+      width:150px;
+      padding:20px;
+    }
+    .service .thing .articleWrap {
+      clear:both;
+      display:block;
+      width:100%;
+      padding:0 20px;
+    }
+
+    .service .thing .articleWrap .thingArticle {
+      max-width:230px;
+      margin:0 auto;
+    }
+
+    .service .thing .articleWrap .thingArticle h2 {
+      line-height:24px;
+    }
+
+section.step.md {
+  display:none !important;
+}
+
+section.step.sm {
+  display:block !important;
+}
+
+
+.stepWordWrap .stepWord , .descriptionWrap .description , .contextWrap .container .context {
+    width: 100%;
+  }
+  .stepWordHolder  .abWrap1 {
+
+ background: linear-gradient(141deg, #213cc6 0%, #6a98c8 51%, #4f9ced 75%);
+ }
+  .stepWordHolder .abWrap1 .container {
+
+max-width: 100%;
+
+margin: 0 auto;
+
+}
+
+  .descriptionHolder   {
+
+ background: #dedede;
+ }
+  .descriptionHolder .abWrap2  {
+
+  }
+
+  .descriptionHolder .abWrap2 .container {
+
+background: transparent;
+
+max-width: 100%;
+
+margin: 0 auto;
+
+}
+
+  .contextWrap .container {
+
+max-width: 100%;
+
+margin: 0 auto;
+
+}
+
+.contextWrap .container .context .articleText , .descriptionWrap .description h2 {
+
+max-width: 100%;
+}
 
 }
 
@@ -1445,9 +1533,7 @@ section.member .cardBox {
       top:calc(100% - 37.5px);
       padding: 0 59px;
     }
-    .businessArea .tab-content .tab-pane .titleWrap .cardWrapper {
-      padding:0 25px!important;
-    }
+
 
     #memberView, .companyMember {
       top:20%;
@@ -1491,9 +1577,7 @@ section.member .cardBox {
     padding:55px 8px 0
   }
 
-  .businessArea .tab-content .tab-pane .titleWrap .cardWrapper {
-    padding:0px;
-  }
+
 
   .vision .contentWrap p.mobileContent , .vision .contentWrap h6 {
     padding:0;
@@ -1566,12 +1650,19 @@ margin: 30px auto 20px;
   padding:15px 20px;
 }
 
+div.businessArea .headerTitle .navigationTapWrapper {
+  width:270px;
+  margin:0 auto;
+}
+div.businessArea .headerTitle .navigationTapWrapper ul.nav-tabs li {
+  width:auto;
+  min-width:90px;
+}
+
 }
 
   @media screen and (max-width:374px)  {
-    .businessArea .tab-content .tab-pane .titleWrap .cardWrapper {
-      padding:0;
-    }
+
 
 
   }
