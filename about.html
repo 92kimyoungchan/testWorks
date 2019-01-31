@@ -194,19 +194,24 @@
 
 				</div>
 			</div>
-			<div class="explainSet">
+
+
+
+	</section>
+
+	<section class="organic">
+			<div class="organicWrapper">
+				<div class="titleWrapper">
+					<div class="title">
+							<img src="images/recruitSmall.png" /> <H2>조직도</H2>
+					</div>
+				</div>
 				<div class="imgWrapper">
-					<img src="images/recruitSmall.png" /></div>
-
-				<h2>조직도</h2>
-
+					<img src="images/organics.png" />
+				</div>
 			</div>
-			<div class="imgWrapper">
-				<img src="images/organics.png" />
-			</div>
-		</div>
 
-
+	</div>
 	</section>
 
 
@@ -726,6 +731,15 @@
 	<script>
 		$(function() {
 
+			var windowWidth = $(window).outerWidth();
+			console.log(windowWidth);
+						if(windowWidth > 645 && windowWidth < 992 ) {
+					$(".introDuctionContext .imgWrapper img").attr("src","images/bgIntroM.png");
+				}else {
+						$(".introDuctionContext .imgWrapper img").attr("src","images/bgIntro.png");
+				}
+
+
 			$("#mobilemenu").click(function() {
 				$(".navigationWrapper .navigation").slideToggle();
 			});
@@ -740,7 +754,12 @@
 		});
 
 		$(window).resize(function() {
-
+			var windowWidth = $(window).outerWidth();
+			if(windowWidth > 645 && windowWidth < 992 ) {
+		$(".introDuctionContext .imgWrapper img").attr("src","images/bgIntroM.png");
+	}else {
+			$(".introDuctionContext .imgWrapper img").attr("src","images/bgIntro.png");
+	}
 		});
 	</script>
 
