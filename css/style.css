@@ -1471,21 +1471,6 @@ font-size: 15.5px;
 
 }
 
-.introDuctionContext {text-align: center;}
-
-.introDuctionContext .imgWrapper {
-
-margin: 20px 0;
-}
-
-.introDuctionContext .imgWrapper img {
-
-}
-
-.introDuctionContext p {
-
-font-size: 16px;
-}
 
 section.history {
 
@@ -3282,8 +3267,7 @@ min-width: 13.5px;
  .articleWrap .thingArticle .pipeLine p {
 
 margin-bottom: 0;
-=======
-
+}
 .mot4{
   -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
@@ -3303,5 +3287,32 @@ margin-bottom: 0;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
->>>>>>> ad18efc5b13f6462e7f2a3ec2666c029f33579f7
+}
+
+.introDuctionContext {
+
+}
+
+
+
+.introDuctionContext .textContent {
+
+}
+
+
+.introDuctionContext .textContent .inImg {
+
+}
+
+
+.introDuctionContext .textContent .inImg img {
+
+}
+
+.introDuctionContext .imgWrapper {
+
+}
+
+.introDuctionContext .imgWrapper img {
+
 }

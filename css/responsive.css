@@ -1093,20 +1093,6 @@ div.contact .textWrap h2 {
   .articleHistory .content p {
     margin-top:0;
   }
-  .introDuctionContext {
-    margin-bottom:25px;
-  }
-  .introDuctionContext p br , .explainSet p br {
-    display:none;
-  }
-
-  .introDuctionContext p , .explainSet p {
-    text-align:left;
-  }
-
-  .introDuctionContext .imgWrapper img {
-    max-width:100%;
-  }
 
   .explainSet p.title {
     text-align:center;
@@ -1533,14 +1519,9 @@ max-width: 100%;
       top:calc(100% - 37.5px);
       padding: 0 59px;
     }
-
-
     #memberView, .companyMember {
       top:20%;
     }
-
-
-
 }
 
 @media screen and (max-width:480px)  {
