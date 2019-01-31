@@ -76,11 +76,9 @@ section:After {
 section .container {
   padding-bottom:85px;
   position: relative;
-  margin-top: -60px;
 }
 
 div.container {
-  background:#fff;
 }
 
 div.container:after {
@@ -1335,6 +1333,11 @@ section.introDuction {
 section.introDuction .container , section.member .container {
  background:#fff;
  box-shadow: inset 0px 0px 16px 2px #f1f1f1;
+}
+
+section.introDuction .container.pop {
+	margin-top:-60px;
+  background:#fff;
 }
 
 .step .explainSet {
