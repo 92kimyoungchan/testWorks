@@ -27,47 +27,111 @@
 <body>
   <!--헤더부분 -->
   <header>
-    <div class="navigationWrapper">
-      <div class="container">
+		<div class="navigationWrapper">
+			<div class="container">
 
 
-      <div class="logoBox"><a href="index.html">
-        <img src="images/main_logo.png" /></a>
-      </div>
-      <div class="mobileNavigationWrap">
-      <a id="mobilemenu" class="test111"><i class="fas fa-align-justify"></i></a>
-      </div>
-      <div class="navigation">
-        <ul>
-          <li class="active">
-            <a href="about.html">회사소개</a>
-          </li>
-          <li>
-            <a href="sample2.html">사업분야</a>
-          </li>
-          <li>
-            <a href="sample.html">사업실적</a>
-          </li>
-          <li>
-            <a href="recruit.html">채용</a>
-          </li>
-          <li>
-            <a href="">플랫폼</a>
-          </li>
-        </ul>
-      </div>
+				<div class="logoBox"><a href="index.html">
+						<img src="images/main_logo.png" /></a>
+				</div>
+				<div class="mobileNavigationWrap">
+					<a id="mobilemenu" class="test111"><i class="fas fa-align-justify"></i></a>
+				</div>
+				<div class="navigation">
+					<ul>
+						<li class="">
+							<a href="about.html">회사소개</a><span><i class="fas fa-plus"></i></span>
+							<ul class="alpha">
+								<li>
+									<p>
+										<a>- Introduction</a>
+									</p>
+								</li>
 
-      <div class="county">
-        <p>EN</p>
-        <p class="active">KR</p>
-        <div class="inputWrap">
-          <input type="text" /> <label><i class="fas fa-search"></i></label>
-        </div>
-      </div>
+								<li>
+									<p>
+										<a>- History</a>
+									</p>
+								</li>
 
-    </div>
-    </div>
-  </header>
+								<li>
+									<p>
+										<a>- 조직도</a>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<a>- 키멤버</a>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="sample2.html">사업분야</a><span><i class="fas fa-plus"></i></span>
+							<ul class="alpha">
+								<li>
+									<p>
+										<a>- SW 테스트</a>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<a>- 테스트 프로세스</a>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<a>- 테스트 자동화</a>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<a>- AI 데이터</a>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="sample.html">사업실적</a>
+						</li>
+						<li>
+							<a href="recruit.html">채용</a><span><i class="fas fa-plus"></i></span>
+							<ul class="alpha">
+								<li>
+									<p>
+										<a>- 채용안내</a>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<a>- 채용관련</a>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">플랫폼</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="county">
+					<p>EN</p>
+					<p class="active">KR</p>
+					<div class="inputWrap">
+						<input type="text" /> <label><i class="fas fa-search"></i></label>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
 
 
 
@@ -448,6 +512,21 @@
   <script>
 
     $(function() {
+
+      $('.navigationWrapper .navigation span').click(function() {
+
+        if ($(this).find('i').hasClass('fa-plus')) {
+          $(this).find('i').removeClass('fa-plus');
+          $(this).find('i').addClass('fa-minus');
+          $('.navigation ul li').removeClass('plus');
+          $(this).next().slideToggle();
+        } else {
+          $(this).find('i').removeClass('fa-minus');
+          $(this).find('i').addClass('fa-plus');
+
+          $(this).next().slideToggle();
+        }
+
 
       $("#mobilemenu").click(function() {
         $(".navigationWrapper .navigation").slideToggle();
