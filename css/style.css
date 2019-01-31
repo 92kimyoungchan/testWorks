@@ -1335,6 +1335,11 @@ section.introDuction .container , section.member .container {
  box-shadow: inset 0px 0px 16px 2px #f1f1f1;
 }
 
+
+section.introDuction .container {
+  padding:0 0 85px 0;
+  max-width:1200px;
+}
 section.introDuction .container.pop {
 	margin-top:-60px;
   background:#fff;
@@ -1496,7 +1501,6 @@ section.history .explainSet h2 {
 }
 
 .historyWrap {
-  border-left: 1.6px solid #9a9a9a;
   width: 940px;
   margin: 45px auto;
 }
@@ -1513,40 +1517,6 @@ position: relative;
 }
 
 
-.historyWrap .articleHistory:not(.figure):before {
-  content:"";
-  top: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #484c62;
-  left: -1px;
-  position: absolute;
-  margin-left: -6.25px;
-}
-
-
-.articleHistory.figure:before {content:"";top: 0;width: 14px;height: 14px;border-radius: 50%;background: #fff;left: -1px;position: absolute;margin-left: -6.25px;}
-
-
-.articleHistory.figure:after {content:"";bottom: -85px;width: 18px;height: 18px;border-radius: 50%;background: #484c62;left: -3px;position: absolute;margin-left: -6.25px;}
-
-
-.articleHistory.figure .contentWrapper:before {content:"";bottom: -24.5px;width: 18px;height: 18px;border-radius: 50%;background: #282f49;left: -3px;position: absolute;margin-left: -6.25px;}
-
-.articleHistory.figure .contentWrapper:after {content:"";bottom: -53.5px;width: 18px;height: 18px;border-radius: 50%;background: #333951;left: -3px;position: absolute;margin-left: -6.25px;}
-
-.articleHistory .theory:after {
-  content:"";
-  bottom: 0px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #40455c;
-  left: -3px;
-  position: absolute;
-  margin-left: -6.25px;
-}
 
 .articleHistory .theory {
 
@@ -1570,7 +1540,7 @@ text-align: left;
 
 display: flex;
 
-margin: 3.5px 0;
+margin: 2.5px 0;
 }
 
 
@@ -3291,28 +3261,39 @@ margin-bottom: 0;
 
 .introDuctionContext {
 
+display: flex;
 }
 
 
 
-.introDuctionContext .textContent {
-
-}
+.introDuctionContext .textContent {border-top: 1px solid #8a8a8a;margin: 0 45px;border-bottom: 1px solid #8a8a8a;padding: 35px 0;width: 50%;}
 
 
 .introDuctionContext .textContent .inImg {
 
+margin: 0px 0 35px;
 }
 
 
 .introDuctionContext .textContent .inImg img {
 
+max-width: 160px;
+}
+
+.introDuctionContext .textContent p {
+
+font-size: 16px;
+
+color: #8a8a8a;
+
+font-weight: 550;
+
+margin-bottom: 0;
 }
 
 .introDuctionContext .imgWrapper {
 
+width: 45%;
 }
 
-.introDuctionContext .imgWrapper img {
-
-}
+.introDuctionContext .imgWrapper img {max-width: 100%;}
